@@ -15,7 +15,7 @@
         <mirror>https://mirrors.aliyun.com/pypi/simple/</mirror>
         <pyqt>pyqt5==5.15.0</pyqt>
         <requests>requests</requests>
-        <numpy>numpy</numpy>
+        <youget>you-get</youget>
     </SetupPackage>
     <setting>
         <constant>

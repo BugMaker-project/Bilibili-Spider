@@ -17,6 +17,8 @@ class Tool:
                     os.system("pip3 install -i %s %s" % (self.mirror, field.text))
                 if field.tag == "numpy":
                     os.system("pip3 install -i %s %s" % (self.mirror, field.text))
+                if field.tag == "youget":
+                    os.system("pip3 install -i %s %s" % (self.mirror, field.text))
 def main():
     tool=Tool()
     tool.setup()
