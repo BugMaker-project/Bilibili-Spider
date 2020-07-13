@@ -2,12 +2,10 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtCore import pyqtSlot,pyqtSignal
 import sys
 import bilibili as b
-class Objects():
-    setting=b.UserSetting()
 class Ui_Gui(object):
     def bvGot(self,text):
         self.lineEdit.clear()
-        video=b.Bilibili(setting=Objects.setting,bv=text)
+        video=b.Bilibili(setting=b.Var.setting,bv=text)
         content=video.str()
         if video.isYingXiaoHao():
             content+="疑似营销号！"
