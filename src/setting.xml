@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package>
+    <introduction>
+        <team>BugMaker-Project</team>
+        <info>
+        <telephone>175****1609</telephone>
+        <email>1840198642@qq.com</email>
+        </info>
+        <code>DpiDUQRvIb03UpvITy36129zFhfvRnSxQGsomASa</code>
+        <code1>HpMWRSiFUHghhKzkOXU7n1f7vkL58V4yzl3xn6M5</code1>
+        <code2>DsSa9iSlRLyoRzlKINuYCJV5P6znhZIEk0yai8M0</code2>
+    </introduction>
+    <SetupPackage>
+        <!--你可以切换自己喜爱的镜像，但请不要删除或修改其他部分-->
+        <mirror>https://mirrors.aliyun.com/pypi/simple/</mirror>
+        <pyqt>pyqt5==5.15.0</pyqt>
+        <requests>requests</requests>
+        <numpy>numpy</numpy>
+    </SetupPackage>
+    <setting>
+        <constant>
+            <!--Don't Change them!-->
+            <coreModule>bilibili.py</coreModule>
+            <guiModule>windows.py</guiModule>
+            <setupModule>setupPackage</setupModule>
+            <spider>requests</spider>
+        </constant>
+        <parameter>
+            <!--avbv可设定为bvid(bv)或者aid(av)-->
+            <avbv>bvid</avbv>
+            <!--调整自己喜欢的不同图标，后缀必为ico-->
+            <favicon>favicon.ico</favicon>
+        </parameter>
+    </setting>
+</package>
