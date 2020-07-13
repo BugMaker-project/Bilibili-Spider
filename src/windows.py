@@ -18,7 +18,7 @@ class Ui_Gui(object):
         text=self.textGot()
         self.bvGot(text)
     def setupUi(self, Gui):
-        self.icon=QtGui.QIcon(Objects.setting.icon)
+        self.icon=QtGui.QIcon(b.Var.setting.icon)
         Gui.setWindowIcon(self.icon)
         Gui.setObjectName("Gui")
         Gui.resize(443, 369)

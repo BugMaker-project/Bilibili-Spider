@@ -30,6 +30,9 @@
             <avbv>bvid</avbv>
             <!--调整自己喜欢的不同图标，后缀必为ico-->
             <favicon>favicon.ico</favicon>
+            <!--下载视频的格式。限定为flv,flv720,flv480,flv360-->
+            <!--如果下载失败，请尝试更换格式。-->
+            <videoFormat>flv</videoFormat>
         </parameter>
     </setting>
 </package>

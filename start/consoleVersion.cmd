@@ -1,2 +1,2 @@
 cd ..\src
-python enterPoint.py --windows
+python enterPoint.py --console

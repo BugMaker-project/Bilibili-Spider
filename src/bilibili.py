@@ -24,6 +24,7 @@ class UserSetting(object):
         self.code2=None
         self.urlMode=None
         self.mirror=None
+        self.format=None
         self.getInfo()
     def getInfo(self):
         root=self.content.getroot()
@@ -41,6 +42,8 @@ class UserSetting(object):
                             self.urlMode=element.text
                         if element.tag=="favicon":
                             self.icon=element.text
+                        if element.tag=="videoFormat":
+                            self.format=element.text
     def isRealVersion(self):
         if Var.code[0]==self.code:
             if Var.code[1]==self.code1:
