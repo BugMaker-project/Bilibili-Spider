@@ -8,9 +8,9 @@ class Ui_Gui(object):
         video=b.Bilibili(setting=b.Var.setting,bv=text)
         content=video.str()
         if video.isYingXiaoHao():
-            content+="疑似营销号！"
+            content+="疑似低质量视频！"
         else:
-            content+="不是营销号！"
+            content+="不是低质量视频！"
         self.isYingXiaoHao_Dis.setText(content)
     def textGot(self):
         return self.lineEdit.text()
@@ -64,7 +64,7 @@ class Ui_Gui(object):
         QtCore.QMetaObject.connectSlotsByName(Gui)
     def retranslateUi(self, Gui):
         _translate = QtCore.QCoreApplication.translate
-        Gui.setWindowTitle(_translate("Gui", "鉴别真假营销号工具"))
+        Gui.setWindowTitle(_translate("Gui", "鉴别低质量视频工具"))
         self.isYingXiaoHao_Dis.setText(_translate("Gui", "TextLabel"))
         self.pushButton.setText(_translate("Gui", "Submit"))
         self.Label.setText(_translate("Gui", "键入BV号"))

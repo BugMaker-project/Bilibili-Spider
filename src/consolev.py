@@ -8,9 +8,9 @@ def main():
         video=b.Bilibili(b.Var.setting,i)
         content = str(video)
         if video.isYingXiaoHao():
-            content += "疑似营销号！"
+            content += "疑似低质量视频！"
         else:
-            content += "不是营销号！"
+            content += "不是低质量视频！"
         print(content)
 if __name__=="__main__":
     main()
