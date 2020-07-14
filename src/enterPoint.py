@@ -10,7 +10,4 @@ if __name__ == '__main__':
     elif argv[1]=="--console":
         consolemain()
     elif argv[1]=="--download":
-        try:
-            os.system("you-get --format==flv %s" %b.Bilibili(b.Var.setting,argv[2]).link)
-        except:
-            os.system("you-get --format==flv480 %s" %b.Bilibili(b.Var.setting,argv[2]).link)
+        os.system("you-get --format==%s %s" %(b.Var.setting.format,b.Bilibili(b.Var.setting,argv[2]).link))
